@@ -1,0 +1,22 @@
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Parallax Section Styling */
+.parallax-section {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Parallax Card Transitions */
+.parallax-card {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.parallax-section.is-visible .parallax-card {
+  transform: translateY(0);
+  opacity: 1;
+}
